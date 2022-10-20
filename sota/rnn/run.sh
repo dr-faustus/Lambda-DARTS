@@ -1,0 +1,1 @@
+python train_search.py --lambda_scheduling --gpu=0 --nhid=200 --nhidlast=200 --emsize=200 --lambda_=0.25  --epsilon_0=0.001
