@@ -1,8 +1,9 @@
 # &Lambda;-DARTS
-This code accompanies the ***&Lambda;-Darts: Mitigating Performance Collapse by Harmonizing Operation Selection among Cells*** [paper](https://arxiv.org/abs/2210.07998)
+This code accompanies the paper:\
+\[[ICLR'2023](https://iclr.cc/)\] \[[&Lambda;-Darts: Mitigating Performance Collapse by Harmonizing Operation Selection among Cells](https://arxiv.org/abs/2210.07998)\]\
 Sajad Movahedi, Melika Adabinejad, Ayyoob Imani, Arezou Keshavarz, Mostafa Dehghani, Azadeh Shakery, Babak N Araabi 
 
-This code is based on the implementation of [DARTS](https://github.com/quark0/darts), [iDARTS](https://github.com/MiaoZhang0525/iDARTS) and [DARTS-PT](https://github.com/ruocwang/darts-pt).
+The code is based on the implementation of [DARTS](https://github.com/quark0/darts), [iDARTS](https://github.com/MiaoZhang0525/iDARTS) and [DARTS-PT](https://github.com/ruocwang/darts-pt).
 
 Differentiable neural architecture search (DARTS) is a popular method for neural architecture search (NAS), which performs cell-search and utilizes continuous relaxation to improve the search efficiency via gradient-based optimization. The main shortcoming of DARTS is performance collapse, where the discovered architecture suffers from a pattern of declining quality during search. Performance collapse has become an important topic of research, with many methods trying to solve the issue through either regularization or fundamental changes to DARTS.
 However, the weight-sharing framework used for cell-search in DARTS and the convergence of architecture parameters has not been analyzed yet. In this paper, we provide a thorough and novel theoretical and empirical analysis on DARTS and its point of convergence.
